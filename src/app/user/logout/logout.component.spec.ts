@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { LogoutComponent } from './logout.component';
+import { commonTestingModules, commonTestingProviders } from '../../common/common.testing';
 
 describe('LogoutComponent', () => {
   let component: LogoutComponent;
@@ -8,9 +8,10 @@ describe('LogoutComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LogoutComponent ]
-    })
-    .compileComponents();
+      imports: commonTestingModules,
+      providers: commonTestingProviders,
+      declarations: [LogoutComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

@@ -1,25 +1,26 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { ManagerHomeComponent } from './manager-home/manager-home.component';
+import { ManagerComponent } from './manager.component'
+import { commonTestingModules } from '../common/common.testing'
 
-describe('ManagerHomeComponent', () => {
-  let component: ManagerHomeComponent;
-  let fixture: ComponentFixture<ManagerHomeComponent>;
+describe('ManagerComponent', () => {
+  let component: ManagerComponent
+  let fixture: ComponentFixture<ManagerComponent>
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ManagerHomeComponent ]
-    })
-    .compileComponents();
-  }));
+      imports: commonTestingModules,
+      declarations: [ManagerComponent],
+    }).compileComponents()
+  }))
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ManagerHomeComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(ManagerComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})
