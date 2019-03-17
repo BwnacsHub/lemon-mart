@@ -5,12 +5,10 @@ import { ManagerHomeComponent } from './manager-home.component';
 describe('ManagerHomeComponent', () => {
   let component: ManagerHomeComponent;
   let fixture: ComponentFixture<ManagerHomeComponent>;
-
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ManagerHomeComponent ]
-    })
-    .compileComponents();
+      declarations: [ManagerHomeComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

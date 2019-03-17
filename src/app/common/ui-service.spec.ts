@@ -1,10 +1,7 @@
-import { TestBed, inject } from '@angular/core/testing';
+import { inject, TestBed } from '@angular/core/testing';
 
-import { UiService } from './ui-service';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MaterialModule } from '../material.module';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { commonTestingModules } from './common.testing';
+import { UiService } from './ui-service';
 
 describe('UiService', () => {
   beforeEach(() => {
@@ -14,7 +11,10 @@ describe('UiService', () => {
     });
   });
 
-  it('should be created', inject([UiService], (service: UiService) => {
-    expect(service).toBeTruthy();
-  }));
+  it(
+    'should be created',
+    inject([UiService], (service: UiService) => {
+      expect(service).toBeTruthy();
+    })
+  );
 });

@@ -8,9 +8,8 @@ describe('PosComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PosComponent ]
-    })
-    .compileComponents();
+      declarations: [PosComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

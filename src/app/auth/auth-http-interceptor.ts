@@ -23,6 +23,7 @@ export class AuthHttpInterceptor implements HttpInterceptor {
             queryParams: { redirectUrl: this.router.routerState.snapshot.url },
           });
         }
+
         return observableThrowError(err);
       })
     );

@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed, inject } from '@angular/core/testing';
+
 import { SimpleDialogComponent } from './simple-dialog.component';
 import { commonTestingModules } from '../common.testing';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';

@@ -5,10 +5,7 @@ import { PosRoutingModule } from './pos-routing.module';
 import { PosComponent } from './pos/pos.component';
 
 @NgModule({
+  imports: [CommonModule, PosRoutingModule],
   declarations: [PosComponent],
-  imports: [
-    CommonModule,
-    PosRoutingModule
-  ]
 })
-export class PosModule { }
+export class PosModule {}
